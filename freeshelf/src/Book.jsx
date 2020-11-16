@@ -15,11 +15,11 @@ const Book = ({ book }) => {
   } = book
 
   return (
-    <div className='standardView'>
+    <div>
+      <img width='100' align='right' src={coverImageUrl} />
       <h1>{title}</h1>
       <h2>{author}</h2>
       <div>{shortDescription}</div>
-      <img className='img' width='300' src={coverImageUrl} />
       <div>
         <button onClick={() => setInformationToggle(!informationToggle)}>
           {informationToggle ? 'Less' : 'More'} Information
